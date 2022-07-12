@@ -3,7 +3,7 @@
 - ## 安装
 
 ```go
-go get github.com/Dzeqkon/ethclient
+go get github.com/Dzeqkon/worm_client
 ```
 
 - ## 客户端
@@ -21,7 +21,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
       )
       
       const (
@@ -66,7 +66,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -114,7 +114,7 @@ go get github.com/Dzeqkon/ethclient
           ```
           package main
           import (
-              "github.com/Dzeqkon/ethclient/client"
+              "github.com/Dzeqkon/worm_client/client"
               "fmt"
           )
           
@@ -160,7 +160,7 @@ go get github.com/Dzeqkon/ethclient
           ```
           package main
           import (
-              "github.com/Dzeqkon/ethclient/client"
+              "github.com/Dzeqkon/worm_client/client"
               "fmt"
           )
           
@@ -204,7 +204,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -250,7 +250,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -290,7 +290,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -330,7 +330,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-           "github.com/Dzeqkon/ethclient/client"
+           "github.com/Dzeqkon/worm_client/client"
            "fmt"
       )
       
@@ -371,7 +371,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -410,7 +410,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -449,7 +449,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -457,7 +457,7 @@ go get github.com/Dzeqkon/ethclient
           endpoint = "http://192.168.4.237:8574"
       priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.AccountAuthorRevoke("0x8b07aff2327a3B7e2876D899caFac99f7AE16B10")
@@ -488,7 +488,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-         "github.com/Dzeqkon/ethclient/client"
+         "github.com/Dzeqkon/worm_client/client"
          "fmt"
       )
       
@@ -496,7 +496,7 @@ go get github.com/Dzeqkon/ethclient
       endpoint = "http://192.168.4.237:8574"
       priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.SNFTToERB("0x8000000000000000000000000000000000000004")
@@ -523,7 +523,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -531,7 +531,7 @@ go get github.com/Dzeqkon/ethclient
           endpoint = "http://192.168.4.237:8574"
           priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.TokenPledge()
@@ -558,7 +558,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -566,7 +566,7 @@ go get github.com/Dzeqkon/ethclient
           endpoint = "http://192.168.4.237:8574"
           priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.TokenRevokesPledge()
@@ -599,7 +599,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -634,7 +634,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -677,7 +677,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -685,7 +685,7 @@ go get github.com/Dzeqkon/ethclient
           endpoint = "http://192.168.4.237:8574"
           priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.InsertNFTBlock("wormholes2", "0x640001", 6553600, 20, "0xab7624f47fd7dadb6b8e255d06a2f10af55990fe")
@@ -717,10 +717,10 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
-    
+      
       const (
           endpoint = "http://192.168.4.237:8574"
           priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
@@ -757,7 +757,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -797,7 +797,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -805,7 +805,7 @@ go get github.com/Dzeqkon/ethclient
           endpoint = "http://192.168.4.237:8574"
           priKey   = "7c6786275d6011adb6288587757653d3f9061275bafc2c35ae62efe0bc4973e9"
       )
-    
+      
       func main() {
           worm := client.NewClient(priKey, endpoint)
           rs, _ := worm.NFT.FoundryTradeBuyer(seller2, "0x44d952db5dfb4cbb54443554f4bb9cbebee2194c")
@@ -838,7 +838,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -879,7 +879,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -921,7 +921,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -962,7 +962,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -1001,7 +1001,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
@@ -1040,7 +1040,7 @@ go get github.com/Dzeqkon/ethclient
       ```
       package main
       import (
-          "github.com/Dzeqkon/ethclient/client"
+          "github.com/Dzeqkon/worm_client/client"
           "fmt"
       )
       
